@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+            
+    <title>Formulario VD</title>
+</head>
+<body>
+    <div class="container" class="center">
+        <h3>Formulário HTML</h3>
+    </div>
+    <fieldset class="container">
+        <form action="">
+            <div class="row">
+                <div class="input-field col s6">
+                  <input id="input_nome" type="text" required>
+                  <label for="input_nome">Nome</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="input_sobrenome" type="text" required>
+                    <label for="input_sobrenome">Sobrenome</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                  <input id="input_tel" type="text" required>
+                  <label for="input_tel">Telefone</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="input_email" type="text" required>
+                    <label for="input_email">E-mail</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="input_msg" class="materialize-textarea"></textarea>
+                  <label for="input_msg">Mensagem</label>
+                </div>
+            </div>
+            <div class="file-field input-field">
+                  <div class="btn">
+                    <span>Prototipo</span>
+                    <input type="file" accept="image/*" required>
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" required>
+                  </div>
+            </div>
+            <div>
+                <p><b>Linguagens preferidas:</b></p>
+            </div>
+            <div>
+                <p>
+                    <label>
+                        <input type="checkbox" class="filled-in" checked="checked" required/>
+                        <span>HTML</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" class="filled-in" checked="checked" required/>
+                        <span>CSS</span>
+                    </label>
+                </p> 
+                <p>
+                    <label>
+                        <input type="checkbox" class="filled-in" checked="checked" required/>
+                        <span>JS</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" class="filled-in" checked="checked" required/>
+                        <span>Python</span>
+                    </label>
+                </p>
+            </div>
+            <div>
+                    <p><b>Banco:</b></p>
+            </div>
+            <div>
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" checked required/>
+                        <span>MySQL</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" required/>
+                        <span>PostgreSQL</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" required />
+                        <span>MongoDB</span>
+                      </label>
+                    </p>
+            </div>
+            <div>
+                    <p><b>Horario preferido reuniões:</b></p>
+                    <input type="time" required>
+            </div>    
+            <div>
+                    <p><b>Entrega prevista:</b></p>
+                    <input type="date" required>
+            </div>    
+            <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+            </button>
+            <button class="btn waves-effect waves-light" type="reset" name="action">Limpar
+            </button>
+        </form>
+    </fieldset>
+    
+</body>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>
